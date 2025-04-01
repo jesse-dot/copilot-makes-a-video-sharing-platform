@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Client, Storage } from 'appwrite';
+import { Client, Account, Databases, Storage } from 'appwrite';
 import UploadForm from '../components/UploadForm';
 
 const client = new Client();

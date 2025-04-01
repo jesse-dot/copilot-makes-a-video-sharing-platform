@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Client, Databases } from 'appwrite';
+import { Client, Account, Databases, Storage } from 'appwrite';
 
 const client = new Client();
 client

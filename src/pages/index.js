@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { Client, Databases } from 'appwrite';
+import { Client, Account, Databases, Storage } from 'appwrite';
 import VideoFeed from '../components/VideoFeed';
 
 const client = new Client();

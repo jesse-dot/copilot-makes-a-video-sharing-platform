@@ -1,5 +1,5 @@
 {
-  "$id": "project_id",
+  "$id": "67ebfcd9001ca641494f",
   "name": "Video Sharing Platform",
   "teamId": "team_id",
   "description": "A video sharing platform where viewers can watch and like other videos, similar to Instagram and TikTok.",
@@ -16,7 +16,7 @@
     "anonymous": false,
     "magicURL": false,
     "invites": false,
-    "jwt": true,
+    "jwt": false,
     "phone": false,
     "oauth2": {
       "github": false,
@@ -36,8 +36,8 @@
   "database": {
     "collections": [
       {
-        "$id": "videos",
-        "name": "Videos",
+        "$id": "67ebfd5e00021a486d09",
+        "name": "videos",
         "permissions": {
           "read": ["role:all"],
           "write": ["role:member"]
@@ -70,8 +70,8 @@
         ]
       },
       {
-        "$id": "comments",
-        "name": "Comments",
+        "$id": "67ebfde8002eae68cf23",
+        "name": "comments",
         "permissions": {
           "read": ["role:all"],
           "write": ["role:member"]
@@ -107,7 +107,7 @@
   "storage": {
     "buckets": [
       {
-        "$id": "videos",
+        "$id": "67ec0061000f4d190150",
         "name": "Videos",
         "permissions": {
           "read": ["role:all"],

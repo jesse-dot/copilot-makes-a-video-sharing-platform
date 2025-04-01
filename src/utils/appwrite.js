@@ -2,8 +2,8 @@ import { Client, Account, Databases, Storage } from 'appwrite';
 
 const client = new Client();
 client
-  .setEndpoint('https://[YOUR_APPWRITE_ENDPOINT]')
-  .setProject('[YOUR_PROJECT_ID]');
+  .setEndpoint('https://appwrite.example.com/v1')
+  .setProject('67ebfcd9001ca641494f');
 
 const account = new Account(client);
 const databases = new Databases(client);

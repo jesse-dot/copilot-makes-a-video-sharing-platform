@@ -4,8 +4,8 @@ import VideoFeed from '../components/VideoFeed';
 
 const client = new Client();
 client
-  .setEndpoint('https://[YOUR_APPWRITE_ENDPOINT]')
-  .setProject('[YOUR_PROJECT_ID]');
+  .setEndpoint('https://appwrite.example.com/v1')
+  .setProject('67ebfcd9001ca641494f');
 
 const databases = new Databases(client);
 
@@ -15,7 +15,7 @@ const Home = () => {
   useEffect(() => {
     const fetchVideos = async () => {
       try {
-        const response = await databases.listDocuments('[YOUR_DATABASE_ID]', '[YOUR_COLLECTION_ID]');
+        const response = await databases.listDocuments('67ebfd4500208e82cc75', '67ebfd5e00021a486d09');
         setVideos(response.documents);
       } catch (error) {
         console.error('Error fetching videos:', error);

@@ -34,7 +34,7 @@ const Upload = () => {
     setError(null);
 
     try {
-      const response = await storage.createFile('[YOUR_BUCKET_ID]', file);
+      const response = await storage.createFile('67ec0061000f4d190150', file);
       console.log('File uploaded successfully:', response);
       // Save video metadata to the database
       // ...

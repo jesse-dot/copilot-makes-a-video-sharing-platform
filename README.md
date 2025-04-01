@@ -28,7 +28,6 @@ npm install
 
 - Create a new project in Appwrite
 - Configure authentication, database, and storage services
-- Update the `src/utils/appwrite.js` file with your Appwrite project details
 
 4. Run the development server:
 

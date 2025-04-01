@@ -4,7 +4,7 @@ import { Client, Databases } from 'appwrite';
 const client = new Client();
 client
   .setEndpoint('https://[YOUR_APPWRITE_ENDPOINT]')
-  .setProject('[YOUR_PROJECT_ID]');
+  .setProject('67ebfcd9001ca641494f');
 
 const databases = new Databases(client);
 
@@ -14,7 +14,7 @@ const VideoItem = ({ video }) => {
   const handleLike = async () => {
     try {
       const updatedVideo = { ...video, likes: likes + 1 };
-      await databases.updateDocument('[YOUR_DATABASE_ID]', '[YOUR_COLLECTION_ID]', video.$id, updatedVideo);
+      await databases.updateDocument('67ebfd4500208e82cc75', '67ebfd5e00021a486d09', video.$id, updatedVideo);
       setLikes(likes + 1);
     } catch (error) {
       console.error('Error updating like count:', error);

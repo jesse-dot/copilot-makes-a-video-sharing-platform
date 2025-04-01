@@ -1,0 +1,119 @@
+{
+  "$id": "project_id",
+  "name": "Video Sharing Platform",
+  "teamId": "team_id",
+  "description": "A video sharing platform where viewers can watch and like other videos, similar to Instagram and TikTok.",
+  "logo": "https://example.com/logo.png",
+  "url": "https://example.com",
+  "legalName": "Video Sharing Platform Inc.",
+  "legalCountry": "US",
+  "legalState": "CA",
+  "legalCity": "San Francisco",
+  "legalAddress": "123 Main St",
+  "legalTaxId": "123-456-789",
+  "auth": {
+    "emailPassword": true,
+    "anonymous": false,
+    "magicURL": false,
+    "invites": false,
+    "jwt": true,
+    "phone": false,
+    "oauth2": {
+      "github": false,
+      "gitlab": false,
+      "bitbucket": false,
+      "discord": false,
+      "facebook": false,
+      "google": false,
+      "linkedin": false,
+      "microsoft": false,
+      "spotify": false,
+      "twitch": false,
+      "apple": false,
+      "yahoo": false
+    }
+  },
+  "database": {
+    "collections": [
+      {
+        "$id": "videos",
+        "name": "Videos",
+        "permissions": {
+          "read": ["role:all"],
+          "write": ["role:member"]
+        },
+        "attributes": [
+          {
+            "$id": "title",
+            "type": "string",
+            "size": 255,
+            "required": true
+          },
+          {
+            "$id": "description",
+            "type": "string",
+            "size": 1000,
+            "required": false
+          },
+          {
+            "$id": "likes",
+            "type": "integer",
+            "required": true,
+            "default": 0
+          },
+          {
+            "$id": "fileId",
+            "type": "string",
+            "size": 255,
+            "required": true
+          }
+        ]
+      },
+      {
+        "$id": "comments",
+        "name": "Comments",
+        "permissions": {
+          "read": ["role:all"],
+          "write": ["role:member"]
+        },
+        "attributes": [
+          {
+            "$id": "videoId",
+            "type": "string",
+            "size": 255,
+            "required": true
+          },
+          {
+            "$id": "userId",
+            "type": "string",
+            "size": 255,
+            "required": true
+          },
+          {
+            "$id": "content",
+            "type": "string",
+            "size": 1000,
+            "required": true
+          },
+          {
+            "$id": "createdAt",
+            "type": "datetime",
+            "required": true
+          }
+        ]
+      }
+    ]
+  },
+  "storage": {
+    "buckets": [
+      {
+        "$id": "videos",
+        "name": "Videos",
+        "permissions": {
+          "read": ["role:all"],
+          "write": ["role:member"]
+        }
+      }
+    ]
+  }
+}

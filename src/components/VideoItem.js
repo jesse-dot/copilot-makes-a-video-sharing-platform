@@ -1,12 +1,5 @@
 import React, { useState } from 'react';
-import { Client, Databases } from 'appwrite';
-
-const client = new Client();
-client
-  .setEndpoint('https://[YOUR_APPWRITE_ENDPOINT]')
-  .setProject('[YOUR_PROJECT_ID]');
-
-const databases = new Databases(client);
+import { client, databases } from '../utils/appwrite';
 
 const VideoItem = ({ video }) => {
   const [likes, setLikes] = useState(video.likes);

@@ -1,13 +1,6 @@
 import { useState } from 'react';
-import { Client, Storage } from 'appwrite';
+import { client, storage } from '../utils/appwrite';
 import UploadForm from '../components/UploadForm';
-
-const client = new Client();
-client
-  .setEndpoint('https://[YOUR_APPWRITE_ENDPOINT]')
-  .setProject('[YOUR_PROJECT_ID]');
-
-const storage = new Storage(client);
 
 const Upload = () => {
   const [file, setFile] = useState(null);

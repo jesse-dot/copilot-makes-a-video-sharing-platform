@@ -1,13 +1,6 @@
 import { useEffect, useState } from 'react';
-import { Client, Databases } from 'appwrite';
+import { client, databases } from '../utils/appwrite';
 import VideoFeed from '../components/VideoFeed';
-
-const client = new Client();
-client
-  .setEndpoint('https://[YOUR_APPWRITE_ENDPOINT]')
-  .setProject('[YOUR_PROJECT_ID]');
-
-const databases = new Databases(client);
 
 const Home = () => {
   const [videos, setVideos] = useState([]);

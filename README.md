@@ -1,2 +1,1 @@
-# copilot-makes-a-video-sharing-platform
-A video sharing platform using Appwrite and Next.js
+This repository is empty. Any task executed on it should be considered a new capability and needs to be created.

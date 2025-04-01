@@ -1,0 +1,18 @@
+{
+  "name": "video-sharing-platform",
+  "version": "1.0.0",
+  "description": "A video sharing platform where viewers can watch and like other videos, similar to Instagram and TikTok.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "next": "^12.0.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "author": "Your Name",
+  "license": "MIT"
+}
